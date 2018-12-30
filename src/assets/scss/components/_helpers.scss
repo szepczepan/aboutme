@@ -1,0 +1,62 @@
+.h-p-color {
+	color: $primary-color;
+}
+.h-sec-color {
+	color: $secondary-color;
+}
+.h-white {
+	color: $white;
+}
+.h-black {
+	color: $black;
+}
+.h-upper {
+	text-transform: uppercase;
+}
+.h-bold {
+	font-weight: bold;
+}
+.h-header-font {
+	font-family: $header-font-family;
+}
+.h-condensed-font {
+	font-family: "Open sans condensed";
+}
+.h-absolute-middle {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.h-flex-container {
+	display: flex;
+}
+.h-hidden {
+	// visibility: hidden;
+	display: none !important;
+}
+hr.br {
+	border: 0;
+}
+.h-flex-center-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+.float-right {
+	float: right;
+}
+.h-relative {
+	position: relative;
+}
+
+.icon-angle-right-black { background-image: image('angle-right-brown.svg') }
+i.icon {
+	width: 15px;
+	height: 12px;
+	display: inline-block;
+	background-repeat: no-repeat;
+}

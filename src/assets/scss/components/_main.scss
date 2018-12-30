@@ -1,0 +1,16 @@
+.c-top-navigation {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    
+}
+.c-full-header {
+    background-image: image('nasa.jpg');
+    height: 80vh;
+    min-height: 300px;
+    background-size: cover;
+
+    .c-full-header__big-txt {
+        color: $white;
+    }
+}
