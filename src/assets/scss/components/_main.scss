@@ -1,16 +1,70 @@
 .c-top-navigation {
-    position: absolute;
+    position: sticky;
     top: 0;
     width: 100%;
-    
+    z-index: 999;
+    padding: .5rem 2rem;
+    .menu {
+        font-size: .85rem;
+        color: $white;
+        // text-transform: uppercase;
+    }
 }
 .c-full-header {
-    background-image: image('nasa.jpg');
-    height: 80vh;
+    height: 95vh;
     min-height: 300px;
-    background-size: cover;
-
+    overflow: hidden;
+    position: relative;
+    // filter: grayscale(.8);
+    &::after {
+        content: "";
+        // background-image: image('nasa.jpg');
+        background-size: 100%;
+		// background-attachment: fixed;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		transform: scale(1.2);
+		filter: grayscale(.8);
+        position: absolute;
+        transition: transform 4s 1s linear;
+    }
     .c-full-header__big-txt {
-        color: $white;
+        // color: $white;
+        padding-top: 45vh;
+        // position: absolute;
+        // font-size: 
+    }
+}
+.c-full-section {
+    height: 100vh;
+    // background-image: image('stuart.jpg');
+    padding-top: 20%;
+    overflow: hidden;
+    .c-full-section__main-title {
+        margin-bottom: 1.5rem;
+    }
+    .c-full-section__bg-title {
+        opacity: 0.05;
+        font-size: 30vh;
+        position: absolute;
+        z-index: -1;
+        line-height: .6;
+        margin-left:-15%;
+    }
+    .c-full-section__img-big {
+        position: absolute;
+        z-index: -1;
+        margin-top: -10%;
+        // opacity: .6;
+        // width: 60vh;
+        margin-left: 2rem;
+    }
+    .c-full-section__box {
+        // background-color: $primary-color;
+        // color:$white;
+        border-top: 1px solid $primary-color;
+        padding: 1rem 0rem;
+        margin-top: 1rem;
     }
 }

@@ -9,22 +9,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Foundation for Sites</title>
   <link rel="stylesheet" href="{{root}}assets/css/app.css">
-  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Open+Sans&amp;subset=latin-ext" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat&amp;subset=latin-ext" rel="stylesheet">
 
 </head>
 
 <body>
-  <nav class="c-top-navigation top-bar">
-    <div class="top-bar-right">
-      <ul class="menu">
-        <li class="is-active"><a>Home</a></li>
-        <li><a>About</a></li>
-        <li><a>Nachos</a></li>
-      </ul>
-    </div>
+  <nav class="c-top-navigation ">
+
+    <ul class="menu align-right">
+      <li><a>Home</a></li>
+      <li><a>Work</a></li>
+      <li><a>About</a></li>
+    </ul>
+
   </nav>
   {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
   {{> body}}
+
+  <footer>
+    
+  </footer>
 
   <script src="{{root}}assets/js/app.js"></script>
 </body>
